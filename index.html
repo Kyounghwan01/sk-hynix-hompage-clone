@@ -1,51 +1,97 @@
 <!-- 1. 개괄적으로 레이아웃을 먼저 자르고 배경을 표시한다 -->
-
+<!-- 2. header : 3등분 : (1)로고 (2)메뉴 (3)아이콘 나눠서 만든다. -->
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>SK 하이닉스</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/reset.css?" />
+    <link rel="stylesheet" href="assets/css/style.css?" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- webfont -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="wrap">
-        <div id="header">
-            <div class="container"></div>
+      <div id="header">
+        <div class="container">
+          <div class="header">
+            <h1><img src="./assets/img/logo.png" alt="하이닉스" /></h1>
+            <div class="nav">
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">IR</a></li>
+                <li><a href="#">CSR</a></li>
+                <li><a href="#">PR</a></li>
+                <li><a href="#">SUPPORT</a></li>
+              </ul>
+            </div>
+            <div class="nav_icon">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-search"></i>
+                    <span>search</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-user-plus"></i><span>carrers</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fas fa-globe"></i><span>language</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!-- header -->
-        <div id="banner">
-            <div class="container"></div>
+      </div>
+      <!-- header -->
+      <div id="banner">
+        <div class="container"></div>
+      </div>
+      <!-- banner -->
+      <div id="contents">
+        <div id="contents1">
+          <div class="container"></div>
         </div>
-        <!-- banner -->
-        <div id="contents">
-            <div id="contents1">
-                <div class="container"></div>
-            </div>
-            <!-- contents1 -->
-            <div id="contents2">
-                <div class="container"></div>
-            </div>
-            <!-- contents2 -->
-            <div id="contents3">
-                <div class="container"></div>
-            </div>
-            <!-- contents3 -->
-            <div id="contents4">
-                <div class="container"></div>
-            </div>
-            <!-- contents4 -->
-            <div id="contents5">
-                <div class="container"></div>
-            </div>
-            <!-- contents5 -->
+        <!-- contents1 -->
+        <div id="contents2">
+          <div class="container"></div>
         </div>
-        <!-- contents -->
-        <div id="footer">
-            <div class="container"></div>
+        <!-- contents2 -->
+        <div id="contents3">
+          <div class="container"></div>
         </div>
-        <!-- footer -->
+        <!-- contents3 -->
+        <div id="contents4">
+          <div class="container"></div>
+        </div>
+        <!-- contents4 -->
+        <div id="contents5">
+          <div class="container"></div>
+        </div>
+        <!-- contents5 -->
+      </div>
+      <!-- contents -->
+      <div id="footer">
+        <div class="container"></div>
+      </div>
+      <!-- footer -->
     </div>
     <!-- wrap -->
-</body>
+  </body>
 </html>

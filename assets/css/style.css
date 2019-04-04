@@ -3,10 +3,10 @@
     width: 100%;
 }
 #header{
-    width: 100%; height: 95px; background-color: #111;
+    width: 100%; height: 95px;
 }
 #banner{
-    width: 100%; height: 609; background-color: #222;
+    width: 100%; height: 609px;; background-color: #222;
 }
 #contents{
     width: 100%; height: 2000px; background-color: #333;
@@ -15,10 +15,9 @@
     width: 100%; height: 300px; background-color: #444;
 }
 
-/*container*/
+/*container : 가운데 내용 들어가는 박스*/
+.container{width: 1100px;margin: 0 auto ;height: inherit; /*background-color: rgba(0,0,0,0.2);*/}
 /*inherit : 상위 단에서 상속받는다*/
-
-.container{width: 1020px;margin: 0 auto;height: inherit; background-color: rgba(255,255,255,0.2);}
 
 /*contents layout*/
 
@@ -27,3 +26,18 @@
 #contents3{width: 100%;height: 400px;background-color: #ba68c8;}
 #contents4{width: 100%;height: 400px;background-color: #ab47bc;}
 #contents5{width: 100%;height: 400px;background-color: #9c27b0;}
+
+/* header */
+.header {overflow: hidden;}
+/* float:left를 쓰면 구조가 깨지니, 그 상위단에 overflow:hidden을 준다 */
+.header h1{float: left; width: 200px; margin-top: 20px;}
+.header .nav{float: left; width: 600px; margin-top: 40px;}
+.header .nav li{display: inline; padding: 0 15px;}
+/* 글자의 경우 float정렬보다 inline정렬 할 것 */
+.header .nav li a{font-size: 15px;font-weight: bold; text-transform: uppercase; letter-spacing: 0.025em;}
+.header .nav_icon{float: right; width: 220px;margin-top: 20px;}
+.header .nav_icon li{float: left; width: 58px;text-align: center;margin-left: 10px; cursor: pointer;}
+.header .nav_icon li a{color:#767676; display: block;}
+.header .nav_icon li a i {font-size: 25px;}
+.header .nav_icon li a:hover{color:#ea5d4b}
+.header .nav_icon li span{display: block;}
