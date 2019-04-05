@@ -6,10 +6,10 @@
     width: 100%; height: 95px;
 }
 #banner{
-    width: 100%; height: 609px;; background-color: #c8c8c8; overflow: hidden;
+    width: 100%; height: 609px;overflow: hidden;
 }
 #contents{
-    width: 100%; height: 2000px; background-color: #333;
+    
 }
 #footer{
     width: 100%; height: 300px; background-color: #444;
@@ -21,7 +21,7 @@
 
 /*contents layout*/
 
-#contents1{width: 100%;height: 400px;background-color: #e1bee7;}
+#contents1{}
 #contents2{width: 100%;height: 400px;background-color: #ce93d8;}
 #contents3{width: 100%;height: 400px;background-color: #ba68c8;}
 #contents4{width: 100%;height: 400px;background-color: #ab47bc;}
@@ -54,3 +54,12 @@
 #banner .banner_icon li a i{font-size: 20px}
 #banner .banner_icon li a span{display: block;}
 /* 아이콘과 내용이 일직선으로 되있는데, 이것을 위아래 구조로 바꿈 */
+
+/* investor */
+.investor{text-align: center; padding: 60px 0 70px;}
+.investor h2{font-size: 26px;}
+.investor p{color: #666;margin-top: 20px;}
+
+.investor .investor_box {}
+.investor .investor_box .ileft{}
+.investor .investor_box .iright{}
