@@ -26,8 +26,8 @@
 #contents1{}
 #contents2{background-color: #f9f7f7;}
 #contents3{}
-#contents4{background-color: rgb(251,246,249);}
-#contents5{width: 100%;height: 400px;background-color: #9c27b0;}
+#contents4{background-color: #f9f7f7;}
+/* #contents5{width: 100%;height: 400px;background-color: #9c27b0;} */
 
 /* header */
 .header {overflow: hidden;}
@@ -103,10 +103,30 @@
 .blog div a{position: relative; display: block; height: 200px; overflow: hidden;}
 .blog div a span{position: absolute; left: 0;bottom: 0; background-color: rgba(0,0,0.7); padding: 10px;width: 320px;color:white; overflow: hidden; text-overflow: ellipsis;white-space: nowrap;}
 .blog div img{width: 100%;}
+
+/* global */
+.global {padding: 60px 0 70px;}
+.global h2{text-align: center; font-size: 26px; padding-bottom: 30px;}
+.global .glink{text-align: center;}
+.global .glink li{display: inline;padding:0 10px; background :url(../img/vline1x8.gif) no-repeat 0 3px;}
+.global .glink li:first-child {background: none;}
+/* korea 앞에 있는 바 없에기 */
+.global .global_map{margin-left: 30px; background: url(../img/img_globalmap.png) no-repeat;}
+.global .global_map .gmlink{text-align: center; margin-top: -80px;}
+.global .global_map .gmlink li{display: inline;}
+.global .global_map .gmlink li a{padding:10px; border: solid 1px #c6c6c6; border-radius: 2px; display: inline-block ;width:148px;}
+.global .global_map .gmlink li:last-child a{color:#ea5d4b;}
+.global .global_map .gmlink li.active a {background-color: #ea5d3b; color: white;}
+
+
+
 /* 
 1. div class를 통해 구조를 css로 만든다 
 2. 맨처음 가로세로 길이를 주어서 컨테이너 구조를 본다 백그라운드로 준다
 3. 가로 세로 구조를 준곳에 float를 써서 넓이를 조정한다. 한단계 위 구조에 overflow:hidden을 준다. 
 
-overflow: hidden; text-overflow: ellipsis;white-space: nowrap; : 한줄에서 글자가 넘치면 ...으로 반환
+overflow: hidden; text-overflow: ellipsis;white-space: nowrap; : 한줄에서 글자가 넘치면 ...으로 반환(104줄)
+가운데 정렬하고 flat:lift같은 형태 : 상위 단에서 text : center 하고 li에서 display: inline; 그러면 width가 안먹을꺼야, 그러면 display:inline-block를 한다 (110줄)
+바 넣는법 : border도 있는데 이미지 백그라운드로 넣는게 가장 이상적이다. no-repet : 이미지가 반복값이므로 1번만 나오게
+
 */
