@@ -25,7 +25,7 @@
     처음 컨테이너를 만들때는 기본값으로 #contents3{width: 100%;height: 400px;background-color: #ba68c8;} 지정할 것 */
 #contents1{}
 #contents2{background-color: #f9f7f7;}
-#contents3{width: 100%;height: 400px;background-color: #ba68c8;}
+#contents3{}
 #contents4{width: 100%;height: 400px;background-color: #ab47bc;}
 #contents5{width: 100%;height: 400px;background-color: #9c27b0;}
 
@@ -84,3 +84,34 @@
 .corporate_box li a span{display: block; text-align: left; color:#666; font-size: 12px; line-height: 20px;}
 .corporate_box li a:hover {color: #222;}
 .corporate_box li a:hover span{text-decoration: none;}
+
+/* products */
+
+.products{ padding: 60px 0 70px;}
+.products h2{text-align: center; font-size: 26px; padding-bottom: 30px;}
+.products .produxts_box{overflow: hidden; margin-left: 19px;}
+.products .produxts_box .column{float: left; width: 340px;height: 300px;margin: 0 10px 20px 10px;}
+.products .produxts_box .column a:hover {text-decoration: none;}
+.products .produxts_box .column h3{font-size: 16px; margin-top:20px;} 
+
+
+
+.products .produxts_box .column p{color:#555; margin-top: 12px;} 
+
+
+
+
+/* .products .produxts_box .col1{}
+.products .produxts_box .col2{}
+.products .produxts_box .col3{}
+.products .produxts_box .col4{}
+.products .produxts_box .col5{}
+.products .produxts_box .col6{} */
+
+
+/* 
+1. div class를 통해 구조를 css로 만든다 
+2. 맨처음 가로세로 길이를 주어서 컨테이너 구조를 본다 백그라운드로 준다
+3. 가로 세로 구조를 준곳에 float를 써서 넓이를 조정한다. 한단계 위 구조에 overflow:hidden을 준다. 
+
+*/
