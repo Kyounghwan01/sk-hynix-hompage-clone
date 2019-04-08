@@ -1,0 +1,72 @@
+/* layout*/
+#wrap {
+    width: 100%;
+}
+#header{
+    width: 100%; height: 95px;
+}
+#banner{
+    width: 100%; height: 609px;overflow: hidden;
+}
+#contents{
+    
+}
+#footer{
+    width: 100%; height: 300px; background-color: #444;
+}
+
+/*container : 가운데 내용 들어가는 박스*/
+.container{width: 1100px;margin: 0 auto ;height: inherit; 
+    /* background-color: rgba(0,0,0,0.2); */
+}
+/*inherit : 상위 단에서 상속받는다*/
+
+/*contents layout*/
+
+#contents1{}
+#contents2{width: 100%;height: 400px;background-color: #ce93d8;}
+#contents3{width: 100%;height: 400px;background-color: #ba68c8;}
+#contents4{width: 100%;height: 400px;background-color: #ab47bc;}
+#contents5{width: 100%;height: 400px;background-color: #9c27b0;}
+
+/* header */
+.header {overflow: hidden;}
+/* float:left를 쓰면 구조가 깨지니, 그 상위단에 overflow:hidden을 준다 */
+.header h1{float: left; width: 200px; margin-top: 20px;}
+.header .nav{float: left; width: 600px; margin-top: 40px;}
+.header .nav li{display: inline; padding: 0 15px; }
+/* 글자의 경우 float정렬보다 inline정렬 할 것 */
+.header .nav li a{font-size: 15px;font-weight: bold; text-transform: uppercase; letter-spacing: 0.025em;}
+.header .nav_icon{float: right; width: 220px;margin-top: 20px;}
+.header .nav_icon li{float: left; width: 58px;text-align: center;margin-left: 10px; cursor: pointer;}
+.header .nav_icon li a{color:#767676; display: block;}
+/* 아이콘과 내용이 일직선으로 되있는데, 이것을 위아래 구조로 바꿈 */
+.header .nav_icon li a i {font-size: 25px;}
+.header .nav_icon li a:hover{color:#ea5d4b}
+.header .nav_icon li span{display: block;}
+
+/*banner*/
+#banner{position: relative;}
+#banner .banner_icon{ position: absolute;left: 0px;bottom: 0px; width: 100%;height: 67px;
+    background-color: rgba(215,94,80,0.6); }
+/* 배너 사진보다 배너 아이콘이 위로 올라가려면 포지션을 줘서 올린다 ,rgba는 투명도*/
+#banner .banner_icon ul{overflow: hidden;}
+#banner .banner_icon li{float: left; width: 25%; text-align: center; padding-top: 14px;}
+#banner .banner_icon li a {color:#fff; }
+#banner .banner_icon li a i{font-size: 20px}
+#banner .banner_icon li a span{display: block;}
+/* 아이콘과 내용이 일직선으로 되있는데, 이것을 위아래 구조로 바꿈 */
+
+/* investor */
+.investor{text-align: center; padding: 60px 0 70px;}
+.investor h2{font-size: 26px;}
+.investor p{color: #666;margin: 20px 0 36px;}
+
+.investor .investor_box {overflow: hidden; border-top: 1px solid #eaeaea;}
+.investor .investor_box .ileft{float: left; width: 400px;height: 300px; padding-top: 20px;}
+.investor .investor_box .iright{float: left;width: 620px;height: 300px;border-left: 1px solid #eaeaea;}
+.investor .investor_box .iright ul{overflow: hidden;}
+.investor .investor_box .iright li{float: left; width: 33.3333%;margin-top: 30px;}
+.investor .investor_box .iright li a:hover{color: #555;}
+.investor .investor_box .iright li a i{font-size: 30px; background-color: #f3f3f3;padding: 10px; border-radius: 50%;width: 40px;height: 40px; line-height: 40px; color:#EC7768;}
+.investor .investor_box .iright li a span{display: block;font-size: 12px;color: #555;padding-top: 10px;}
