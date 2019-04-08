@@ -16,16 +16,18 @@
 }
 
 /*container : 가운데 내용 들어가는 박스*/
-.container{width: 1100px;margin: 0 auto ;height: inherit; background-color: rgba(0,0,0,0.2);}
+.container{width: 1100px;margin: 0 auto ;height: inherit; 
+    /* background-color: rgba(0,0,0,0.2); */
+}
 /*inherit : 상위 단에서 상속받는다*/
 
-/*contents layout*/
-
+/*contents layout
+    처음 컨테이너를 만들때는 기본값으로 #contents3{width: 100%;height: 400px;background-color: #ba68c8;} 지정할 것 */
 #contents1{}
-#contents2{width: 100%;height: 400px;background-color: #ce93d8;}
-#contents3{width: 100%;height: 400px;background-color: #ba68c8;}
-#contents4{width: 100%;height: 400px;background-color: #ab47bc;}
-#contents5{width: 100%;height: 400px;background-color: #9c27b0;}
+#contents2{background-color: #f9f7f7;}
+#contents3{}
+#contents4{background-color: #f9f7f7;}
+/* #contents5{width: 100%;height: 400px;background-color: #9c27b0;} */
 
 /* header */
 .header {overflow: hidden;}
@@ -58,8 +60,73 @@
 /* investor */
 .investor{text-align: center; padding: 60px 0 70px;}
 .investor h2{font-size: 26px;}
-.investor p{color: #666;margin-top: 20px;}
+.investor p{color: #666;margin: 20px 0 36px;}
 
-.investor .investor_box {}
-.investor .investor_box .ileft{}
-.investor .investor_box .iright{}
+.investor .investor_box {overflow: hidden; border-top: 1px solid #eaeaea;}
+.investor .investor_box .ileft{float: left; width: 400px;height: 300px; padding-top: 20px;}
+.investor .investor_box .iright{float: left;width: 620px;height: 300px;border-left: 1px solid #eaeaea;}
+.investor .investor_box .iright ul{overflow: hidden;}
+.investor .investor_box .iright li{float: left; width: 33.3333%;margin-top: 30px;}
+.investor .investor_box .iright li a:hover{color: #555;}
+.investor .investor_box .iright li a i{font-size: 30px; background-color: #f3f3f3;padding: 10px; border-radius: 50%;width: 40px;height: 40px; line-height: 40px; color:#EC7768;}
+.investor .investor_box .iright li a span{display: block;font-size: 12px;color: #555;padding-top: 10px;}
+
+/* corporate */
+.corporate {text-align: center; padding: 60px 0 70px;}
+.corporate h2{font-size: 26px;}
+.corporate p {color: #666;margin: 20px 0 36px; line-height: 30px;}
+.corporate_box{text-align: left; border-top: solid 1px #e6e6e6;padding-top: 50px;}
+.corporate_box ul{overflow: hidden;}
+.corporate_box li{float: left; width: 226px;height: 110px; margin: 0 30px; position: relative; padding-left: 80px;}
+.corporate_box li a{text-align: center;}
+.corporate_box li a i{font-size: 30px; background-color: #EA5D4B;color:white;width: 60px;height: 60px; line-height: 60px;border-radius: 50%;position: absolute; left: 0;top: 5px;}
+.corporate_box li a strong{display: block; text-align: left; font-size: 14px;padding-bottom: 5px;}
+.corporate_box li a span{display: block; text-align: left; color:#666; font-size: 12px; line-height: 20px;}
+.corporate_box li a:hover {color: #222;}
+.corporate_box li a:hover span{text-decoration: none;}
+
+/* products */
+
+.products{ padding: 60px 0 70px;}
+.products h2{text-align: center; font-size: 26px; padding-bottom: 30px;}
+.products .produxts_box{overflow: hidden; margin-left: 19px;}
+.products .produxts_box .column{float: left; width: 340px;height: 300px;margin: 0 10px 20px 10px;}
+.products .produxts_box .column a:hover {text-decoration: none;}
+.products .produxts_box .column h3{font-size: 16px; margin-top:20px;} 
+.products .produxts_box .column p{color:#555; margin-top: 12px;} 
+
+
+/* blog */
+.blog {padding: 60px 0 70px; overflow: hidden;}
+.blog h2{text-align: center; font-size: 26px; padding-bottom: 30px;}
+.blog div{float: left; width: 340px;margin: 0 10px;}
+.blog div a{position: relative; display: block; height: 200px; overflow: hidden;}
+.blog div a span{position: absolute; left: 0;bottom: 0; background-color: rgba(0,0,0.7); padding: 10px;width: 320px;color:white; overflow: hidden; text-overflow: ellipsis;white-space: nowrap;}
+.blog div img{width: 100%;}
+
+/* global */
+.global {padding: 60px 0 70px;}
+.global h2{text-align: center; font-size: 26px; padding-bottom: 30px;}
+.global .glink{text-align: center;}
+.global .glink li{display: inline;padding:0 10px; background :url(../img/vline1x8.gif) no-repeat 0 3px;}
+.global .glink li:first-child {background: none;}
+/* korea 앞에 있는 바 없에기 */
+.global .global_map{margin-left: 30px; background: url(../img/img_globalmap.png) no-repeat;}
+.global .global_map .gmlink{text-align: center; margin-top: -80px;}
+.global .global_map .gmlink li{display: inline;}
+.global .global_map .gmlink li a{padding:10px; border: solid 1px #c6c6c6; border-radius: 2px; display: inline-block ;width:148px;}
+.global .global_map .gmlink li:last-child a{color:#ea5d4b;}
+.global .global_map .gmlink li.active a {background-color: #ea5d3b; color: white;}
+
+
+
+/* 
+1. div class를 통해 구조를 css로 만든다 
+2. 맨처음 가로세로 길이를 주어서 컨테이너 구조를 본다 백그라운드로 준다
+3. 가로 세로 구조를 준곳에 float를 써서 넓이를 조정한다. 한단계 위 구조에 overflow:hidden을 준다. 
+
+overflow: hidden; text-overflow: ellipsis;white-space: nowrap; : 한줄에서 글자가 넘치면 ...으로 반환(104줄)
+가운데 정렬하고 flat:lift같은 형태 : 상위 단에서 text : center 하고 li에서 display: inline; 그러면 width가 안먹을꺼야, 그러면 display:inline-block를 한다 (110줄)
+바 넣는법 : border도 있는데 이미지 백그라운드로 넣는게 가장 이상적이다. no-repet : 이미지가 반복값이므로 1번만 나오게
+
+*/
