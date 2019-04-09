@@ -127,7 +127,10 @@
 .footer_top .ft_right .ft_right_right li.pt10{padding-top: 2px;}
 .footer_top .ft_right .ft_right_right li.img a{background: none; padding-left: 0;}
 /* footer_bom */
-.footer_bom{height: 80px;}
+.footer_bom{height: 80px; padding: 20px 0; overflow: hidden;}
+.footer_bom .w3c{float: right; width: 30%;}
+.footer_bom address{float: left; width:60%;color: #555;font-size: 12px;line-height: 19px;}
+.footer_bom address span{display: block; font-size: 11px;color: #767676;line-height: 18px;}
 
 
 

@@ -67,3 +67,5 @@ button {
   color: #222;
   letter-spacing: -1px;
 }
+/* 폰트 스타일 초기화 */
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
