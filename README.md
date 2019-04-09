@@ -1,7 +1,8 @@
 # sk-hynix-hompage-clone
 
-git hosting page : https://kyounghwan01.github.io/sk-hynix-hompage-clone/
-
+git hosting page : <br>
+main : https://kyounghwan01.github.io/sk-hynix-hompage-clone/<br>
+about : https://kyounghwan01.github.io/sk-hynix-hompage-clone/about/overview.html
 ## 모든 과정별 완료시 css 검사 툴 돌리기!
 
 ## container 구조 잡기
