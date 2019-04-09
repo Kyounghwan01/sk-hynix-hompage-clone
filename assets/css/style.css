@@ -14,9 +14,9 @@
 /*contents layout
     처음 컨테이너를 만들때는 기본값으로 #contents3{width: 100%;height: 400px;background-color: #ba68c8;} 지정할 것 */
 #contents1{}
-#contents2{background-color: #f9f7f7;}
+#contents2{width:100%; background-color: #f9f7f7;}
 #contents3{}
-#contents4{background-color: #f9f7f7;}
+#contents4{width:100%; background-color: #f9f7f7;}
 /* #contents5{width: 100%;height: 400px;background-color: #9c27b0;} */
 
 /* header */
