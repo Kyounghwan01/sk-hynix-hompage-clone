@@ -132,7 +132,11 @@
 .footer_bom address{float: left; width:60%;color: #555;font-size: 12px;line-height: 19px;}
 .footer_bom address span{display: block; font-size: 11px;color: #767676;line-height: 18px;}
 
-
+/* sub_banner */
+.sub_banner{}
+.sub_banner .visiual{height: 256px; line-height: 256px;}
+.sub_banner .visiual h2{color: white;font-size: 45px;text-transform: uppercase;font-weight: normal; }
+.sub_banner .visiual.about{background:url(../img/visual_about.jpg) no-repeat center top;}
 
 
 
