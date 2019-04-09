@@ -108,11 +108,30 @@
 .global .global_map .gmlink li:last-child a{color:#ea5d4b;}
 .global .global_map .gmlink li.active a {background-color: #ea5d3b; color: white;}
 
-/* footer */
-.footer_top{height: 300px;overflow: hidden;background-color: rgb(233,233,233);}
+/* footer_top_left */
+.footer_top{height: 225px; overflow: hidden;background-color: rgb(233,233,233);}
+.footer_top .ft_left{float: left;width: 549px;height: 225px; border-right: 1px solid #d7d7d7;}
+.footer_top .ft_left h3{padding-top: 22px;}
+.footer_top .ft_left ul{overflow: hidden;}
+.footer_top .ft_left ul li{float: left; width: 50%;} 
+.footer_top .ft_left ul li a{color:#666; font-size: 12px; line-height: 20px; background: url(../img/bul_gray_square.gif)no-repeat 0 6px; padding-left: 8px;}
+/* foot_top_right */
+.footer_top .ft_right{float: left;width: 550px;height: 225px;}
+.footer_top .ft_right .ft_right_left{float: left; width:50%;}
+.footer_top .ft_right .ft_right_left h3{padding-top: 22px;padding-left: 20px;}
+.footer_top .ft_right .ft_right_left ul{padding-left: 20px;}
+.footer_top .ft_right .ft_right_left a{color:#666; font-size: 12px; line-height: 20px; background: url(../img/bul_gray_square.gif)no-repeat 0 6px; padding-left: 8px;}
+.footer_top .ft_right .ft_right_right{float: left; width:50%;}
+.footer_top .ft_right .ft_right_right h3{padding-top: 22px;}
+.footer_top .ft_right .ft_right_right li a{color:#666; font-size: 12px; line-height: 20px; background: url(../img/bul_gray_square.gif)no-repeat 0 6px; padding-left: 8px;}
+.footer_top .ft_right .ft_right_right li.pt10{padding-top: 2px;}
+.footer_top .ft_right .ft_right_right li.img a{background: none; padding-left: 0;}
+/* footer_bom */
 .footer_bom{height: 80px;}
-.footer_top .ft-left{float: left;width: 549px;height: 300;border-right: 1px solid #d7d7d7;}
-.footer_top .ft-right{float: left;width: 550px;height: 300px;}
+
+
+
+
 
 /* 
 1. div class를 통해 구조를 css로 만든다 
