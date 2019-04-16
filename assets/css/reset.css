@@ -20,6 +20,7 @@ table {width:100%;border-spacing:0;border-collapse:collapse;}
 
 /* caption */
 caption {padding: 0; margin: 0; font-size: 0; line-height: 0; width: 0; height: 0; text-indent:-9999px;}
+/* text-indent:-9999px; 들여쓰기 삭제 */
 
 
 /* padding, margin setting */
