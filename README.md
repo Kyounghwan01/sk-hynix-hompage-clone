@@ -2,8 +2,8 @@
 
 git hosting page : <br>
 main : https://kyounghwan01.github.io/sk-hynix-hompage-clone/<br>
-about : https://kyounghwan01.github.io/sk-hynix-hompage-clone/about/overview.html
-ceomessage : https://kyounghwan01.github.io/sk-hynix-hompage-clone/about/ceoMessage.html
+about : https://kyounghwan01.github.io/sk-hynix-hompage-clone/about/overview.html<br>
+ceomessage : https://kyounghwan01.github.io/sk-hynix-hompage-clone/about/ceoMessage.html<br>
 
 ## 모든 과정별 완료시 css 검사 툴 돌리기!
 
