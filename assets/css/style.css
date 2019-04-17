@@ -35,6 +35,18 @@
 .header .nav_icon li a:hover{color:#ea5d4b}
 .header .nav_icon li span{display: block;}
 
+/* navigation */
+.sub_menu{width: 100%;height: 200px;border-top: 1px solid rgb(237,127,116); background: #fff;position: absolute;top: 95px;left: 0;display: none;z-index: 10;/* 사라지게 */}
+.header .nav li .sub_menu{display: block;/* 메뉴1번에 마우스 놓으면 서브메뉴가 나오게하는css (캐스팅)  */}
+/* :hover */
+.sub_menu .container .sub_top .borderR{border-right: 1px solid rgb(231,231,231); padding-left: 15px; height: 145px;}
+.sub_menu .container .sub_top p{font-weight: bold; line-height: 22px; font-size: 12px;}
+.sub_menu .container .sub_top .sub_into p{font-weight: normal;line-height: 13px;font-size: 10px;background: url(../img/bul_gray_square.gif)no-repeat 0 4px; padding-left: 5px; letter-spacing: 0.5px; color: rgb(129,129,129);}
+.sub_menu .container .sub_bot ul{overflow: hidden;}
+.sub_menu .container .sub_bot ul div p{float: left;}
+.sub_menu .container .sub_bot li{float: left; width: 16%; text-align: center; padding-top: 14px;overflow: hidden;}
+
+
 /*banner*/
 #banner{position: relative;}
 #banner .banner_icon{ position: absolute;left: 0px;bottom: 0px; width: 100%;height: 67px;
@@ -171,6 +183,8 @@
 .column-box .w50{width:50%;}
 .column-box .w40{width:40%;}
 .column-box .w60{width:60%;}
+.column-box .w20{width:20%;}
+.column-box .w18{width:18%;}
 .column-box .ceo_comment{font-size: 15px; line-height: 23px;}
 /* table */
 .table-style1{border-top: 2px solid #464e6b;}

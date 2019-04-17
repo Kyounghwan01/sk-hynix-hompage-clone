@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.navigation_list{
+	float: left;
+	width: 150px;
+	line-height: 40px; /* 텍스트를 상하로 가운데 정렬하는 속성 */
+	text-align: center;
+}
+
+.navigation_link{
+	font-size: 16px;
+	color: #00ab33;
+}
+
+.sub_menu{
+	width: 100%;
+	height: 200px;
+	background: #ff0;
+	position: absolute;
+	top: 95px;
+	left: 0;
+    display: none;
+    z-index: 100;
+    /* 사라지게 */
+}
+
+.header .nav li:hover .sub_menu{
+	display: block;
+    /* 메뉴1번에 마우스 놓으면 서브메뉴가 나오게하는css (캐스팅)  */
+}
